@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avalanche Nexus Portal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="blob"></div>
+    <div class="blob-2"></div>
+
+    <div class="container">
+      <header>
+        <div class="logo">❄️</div>
+        <h1>Avalanche Wallet</h1>
+        <p class="subtitle">DApps Web3 Access</p>
+      </header>
+
+      <div class="status-badge" id="statusBadge">
+        <span class="dot"></span>
+        <span id="statusText">Disconnected</span>
+      </div>
+
+      <button id="connectBtn">Connect Wallet</button>
+
+      <div id="errorMsg" class="error-box" style="display: none"></div>
+
+      <div class="card">
+        <div class="info-row">
+          <label>Wallet Address</label>
+          <p id="address" class="value">-</p>
+        </div>
+        <div class="info-row">
+          <label>Network</label>
+          <p id="network" class="value">-</p>
+        </div>
+        <div class="info-row">
+          <label>Balance</label>
+          <p class="value">
+            <div class="avax-balance-right">
+            <span id="balance">-</span> <span class="unit">AVAX</span>
+            </div>
+            <div class="avax-balance-left">
+              <strong>Avalanche (C-Chain)</strong><br>
+            </div>
+          </p>
+        </div>
+      </div>
+
+      <footer class="user-info">
+        <p><strong>Mikael Immanuel Christianto</strong></p>
+        <p>221011450517</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
